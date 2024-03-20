@@ -3,13 +3,16 @@
 Image(ImageProvider<Object> image, ..)
 Image.asset(String name, ..)     png,jpg
 Image.network(String src, ..)    url
-Image.file(File file, ..)
+Image.file(File file, ..)    -- permission_handler: ^11.3.0 qo'shiladi
 Image.memory(Uint8List bytes, ..)
 
 */
 
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/config/img.dart';
+import 'package:flutter_widgets/config/img_url.dart';
 
 class ImagePage extends StatefulWidget {
   const ImagePage({super.key});
@@ -28,12 +31,61 @@ class _ImagePageState extends State<ImagePage> {
         color: Colors.red,
         child: Image.asset(
           AppIcon.media8,
-          fit: BoxFit.fill,
+          fit: BoxFit.cover,
         ),
       ),
     );
   }
 }
+/*
+        Container(
+      child: Image.file(File('D:/iphone/RecentlyDeleted/Camera Roll/salo.jpg')),
+    ),
+*/
+
+/*
+      Container(
+        child: Image.network(
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ5odRUm01njfGb4YJcEHXRrumMwJPeW8bs2Jd_3_usg&s'),
+      ),
+*/
+
+/*
+       Container(
+        width: 300,
+        height: 500,
+        color: Colors.red,
+        child: Image.asset(
+          AppIcon.media8,
+          fit: BoxFit.cover,
+          // values
+          // contain
+          // cover
+          // fill
+          // fitHeight
+          // fitWidth
+          // none
+          // scaleDown
+        ),
+      ),
+ */
+
+  /*
+       Container(
+        width: double.infinity,
+        height: double.infinity,
+        child: Image.asset(
+          AppIcon.media8,
+          repeat: ImageRepeat.repeat,
+          // noRepeat
+          // repeat
+          // repeatX
+          // repeatY
+          // values
+        ),
+      ),
+  */
+
   /*
       Container(
         width: 300,
