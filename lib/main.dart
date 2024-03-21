@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/widgets/ContainerPage.dart';
 import 'package:flutter_widgets/widgets/ImagePage.dart';
 import 'package:flutter_widgets/widgets/Padding.dart';
 import 'package:flutter_widgets/widgets/Rich.Text.dart';
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const ImagePage(),
+      home: const ContainerPage(),
     );
   }
 }
