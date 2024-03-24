@@ -1,6 +1,7 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class Fl_ChardPage3 extends StatefulWidget {
   const Fl_ChardPage3({super.key});
 
@@ -14,12 +15,12 @@ class _Fl_ChardPage3State extends State<Fl_ChardPage3> {
     return Scaffold(
       appBar: AppBar(),
       body: Padding(
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         child: AspectRatio(
           aspectRatio: 1,
           child: BarChart(BarChartData(
               borderData: FlBorderData(
-                border: Border(
+                border: const Border(
                   top: BorderSide.none,
                   right: BorderSide.none,
                   left: BorderSide(width: 1),
