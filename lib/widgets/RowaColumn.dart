@@ -12,7 +12,7 @@ class _Row_ColumnState extends State<Row_Column> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.only(top: 100),
+        padding: const EdgeInsets.only(top: 100),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
@@ -62,7 +62,7 @@ class FileOption extends StatelessWidget {
           decoration: BoxDecoration(
               color: color.withOpacity(0.25), shape: BoxShape.circle),
         ),
-        SizedBox(height: 8),
+        const SizedBox(height: 8),
         Text(text)
       ],
     );
