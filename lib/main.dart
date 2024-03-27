@@ -6,6 +6,7 @@ import 'package:flutter_widgets/widgets/ExpandedPage.dart';
 import 'package:flutter_widgets/widgets/Fl_ChardPage.dart';
 import 'package:flutter_widgets/widgets/Fl_ChardPage2.dart';
 import 'package:flutter_widgets/widgets/Fl_ChardPage3.dart';
+import 'package:flutter_widgets/widgets/FlexiblePage.dart';
 import 'package:flutter_widgets/widgets/ImagePage.dart';
 import 'package:flutter_widgets/widgets/Padding.dart';
 import 'package:flutter_widgets/widgets/Rich.Text.dart';
@@ -42,7 +43,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const ExpandedPage(),
+      home: const FlexiblePage(),
     );
   }
 }
