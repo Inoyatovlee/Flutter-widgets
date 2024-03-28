@@ -59,3 +59,16 @@ class _FlexiblePageState extends State<FlexiblePage> {
                   color: Colors.blue)),
         ],
   */
+
+  /*
+ children: [
+          Container(width: double.infinity, height: 200, color: Colors.amber),
+          Flexible(
+            fit: FlexFit.tight,
+            //loose -- qoladi
+            //tight -- cho'ziladi
+            child: Container(
+                width: double.infinity, height: 200, color: Colors.orange),
+          ),
+        ],
+  */
