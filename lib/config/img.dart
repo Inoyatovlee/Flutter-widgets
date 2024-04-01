@@ -4,4 +4,7 @@ class AppIcon {
   static String base_ = 'assets/icons/Base.svg';
   static String ellipse_8 = "assets/images/Ellipse_8.png";
   static String media8 = "assets/images/Media8.png";
+  static String m1 = "assets/images/m1.jpg";
+  static String m2 = "assets/images/m2.jpg";
+  static String m3 = "assets/images/m3.jpg";
 }
