@@ -4,6 +4,7 @@ import 'package:flutter_widgets/widgets/CardPage.dart';
 import 'package:flutter_widgets/widgets/CenterPage.dart';
 import 'package:flutter_widgets/widgets/ColumnPage.dart';
 import 'package:flutter_widgets/widgets/ContainerPage.dart';
+import 'package:flutter_widgets/widgets/DividerPage.dart';
 import 'package:flutter_widgets/widgets/ExpandedPage.dart';
 import 'package:flutter_widgets/widgets/Fl_ChardPage.dart';
 import 'package:flutter_widgets/widgets/Fl_ChardPage2.dart';
@@ -48,7 +49,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const StackPage(),
+      home: const DividerPage(),
     );
   }
 }
