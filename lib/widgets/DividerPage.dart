@@ -21,7 +21,7 @@ class _DividerPageState extends State<DividerPage> {
             height: 200,
             color: Colors.amber,
           ),
-          Divider(
+          const Divider(
             color: Colors.black,
             thickness: 2,
             height: 30,

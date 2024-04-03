@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/widgets/Align_Page.dart';
+import 'package:flutter_widgets/widgets/BottomNavigationBar_.dart';
 import 'package:flutter_widgets/widgets/CardPage.dart';
 import 'package:flutter_widgets/widgets/CenterPage.dart';
 import 'package:flutter_widgets/widgets/ColumnPage.dart';
@@ -49,7 +50,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const DividerPage(),
+      home: const BottomNavigationBar_(),
     );
   }
 }
