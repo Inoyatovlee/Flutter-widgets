@@ -14,7 +14,7 @@ class _ConstrainedBoxPageState extends State<ConstrainedBoxPage> {
       appBar: AppBar(),
       body: Center(
         child: ConstrainedBox(
-          constraints: BoxConstraints(
+          constraints: const BoxConstraints(
             minWidth: 100,
             minHeight: 100,
             maxHeight: 300,
