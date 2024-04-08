@@ -1,6 +1,6 @@
 //
 //   bu moslashtirib beradi  .qolganlari yozilmagan
-// va bu yerda rasim chiqib qolmay moslashtirib bergan
+//   va bu yerda rasim chiqib qolmay moslashtirib bergan
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/config/img.dart';
 
@@ -11,6 +11,7 @@ class fitted_boxPage extends StatefulWidget {
   State<fitted_boxPage> createState() => _fitted_boxPageState();
 }
 
+// ignore: camel_case_types
 class _fitted_boxPageState extends State<fitted_boxPage> {
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,7 @@ class _fitted_boxPageState extends State<fitted_boxPage> {
       body: FittedBox(
         child: Row(
           children: [
-            Text(
+            const Text(
               "Fscbcysb unncnue aidj",
               style: TextStyle(fontSize: 30),
             ),
