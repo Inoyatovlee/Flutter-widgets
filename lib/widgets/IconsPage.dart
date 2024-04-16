@@ -12,7 +12,7 @@ class _IconsPageState extends State<IconsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Center(
+      body: const Center(
         child: Icon(
           Icons.person_4_outlined,
           size: 80,

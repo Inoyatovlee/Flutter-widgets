@@ -1,24 +1,96 @@
-// import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_widgets/config/img.dart';
 
-// class ListTile extends StatefulWidget {
-//   const ListTile({super.key});
+class ListTilePage extends StatefulWidget {
+  const ListTilePage({super.key});
 
-//   @override
-//   State<ListTile> createState() => _ListTileState();
-// }
+  @override
+  State<ListTilePage> createState() => _ListTilePageState();
+}
 
-// class _ListTileState extends State<ListTile> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(),
-//       body: ListView(
-//         children: [
-//           //
-//           ListTile()
-//           //
-//         ],
-//       ),
-//     );
-//   }
-// }
+class _ListTilePageState extends State<ListTilePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+      body: ListView(
+        children: [
+          //
+          ListTile(
+            leading: CircleAvatar(
+              backgroundImage: AssetImage(AppIcon.m1),
+            ),
+            title: const Text("Karimov Karim"),
+            subtitle: const Text("Flutter Developer"),
+            trailing: const Icon(Icons.navigate_next_outlined),
+
+            //
+            //dense: true,
+            //isThreeLine: true,
+            //enabled: false,
+            //
+            // contentPadding: EdgeInsets.all(50),
+            // horizontalTitleGap: 100,
+            //
+            // shape:
+            //     RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+            //
+            //style: ListTileStyle.drawer,
+            //
+            // onTap: () {
+            //   print("You just go");
+            // },
+            //
+            // onLongPress: () {
+            //   print("You just Jauna go");
+            // },
+            //
+            // iconColor: Colors.red,
+            // textColor: Colors.deepPurpleAccent,
+            // tileColor: Colors.black,
+          ),
+          //
+
+          const ListTile(
+            leading: CircleAvatar(
+              child: Text("A"),
+            ),
+            title: Text("Lutfula to'rayev"),
+            subtitle: Text("designer"),
+            trailing: Icon(Icons.navigate_next_outlined),
+            //
+            //dense: false,
+            //isThreeLine: false,
+          )
+        ],
+      ),
+    );
+  }
+}
+/*
+ ListTile(
+            leading: CircleAvatar(
+              backgroundImage: AssetImage(AppIcon.m1),
+            ),
+            title: const Text("Karimov Karim"),
+            subtitle: const Text("Flutter Developer"),
+            trailing: const Icon(Icons.navigate_next_outlined),
+            onTap: () {},
+            hoverColor: Colors.orange,
+            focusColor: Colors.green,
+          ),
+*/
+
+/*
+ListTile(
+            leading: CircleAvatar(
+              backgroundImage: AssetImage(AppIcon.m1),
+            ),
+            title: const Text("Karimov Karim"),
+            subtitle: const Text("Flutter Developer"),
+            trailing: const Icon(Icons.navigate_next_outlined),
+            selected: true,
+            selectedColor: Colors.white,
+            selectedTileColor: Colors.red,
+          ),
+*/
