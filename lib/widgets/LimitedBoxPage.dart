@@ -26,6 +26,7 @@ class _LimitedBoxPageState extends State<LimitedBoxPage> {
               child: Text('${index + 1}'),
             ),
           );
+          return null;
         },
       ),
     );
